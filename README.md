@@ -1,5 +1,9 @@
 # Claude Code Multi-Agent + OpenSpec — Material del workshop
 
+## Capstone
+
+- Guía de la demo: [`Guia Demo.md`](Guia%20Demo.md) — resumen, menú de features, requisitos para otro proyecto, checklist de terminado y formato de la demo.
+
 ## Clase 1
 
 M0 Kickoff · M1 CLAUDE.md · M2 Subagents · M3 Agent Teams — labs 01–03 (25 slides).
