@@ -1,0 +1,16 @@
+---
+// A hands-on lab. Pair with `layout: lab`.
+//
+//   <Lab badge="LAB 01" objective="you will have a running deck" success="it renders">
+//     <Task>Run npm install</Task>
+//   </Lab>
+
+
+const { badge = 'LAB', objective, success } = Axo.props;
+expect(toChildArray(Axo.children).length > 0, '<Lab> needs at least one <Task>.');
+---
+
+<span class="lab-badge">{badge}</span>
+{objective && <div class="lab-objective"><strong>Objetivo:</strong> {objective}</div>}
+<ol class="lab-steps"><slot /></ol>
+{success && <div class="success">✓ {success}</div>}

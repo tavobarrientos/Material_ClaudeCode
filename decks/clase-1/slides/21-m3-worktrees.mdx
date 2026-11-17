@@ -1,0 +1,21 @@
+<Eyebrow>M3 · Aislamiento</Eyebrow>
+
+## Git worktrees: un directorio por teammate
+
+<Terminal path="~/capstone">
+  ```bash
+  git worktree add ../tb-schema -b feat/stock-schema
+  git worktree add ../tb-api    -b feat/stock-api
+  git worktree add ../tb-ui     -b feat/stock-ui
+  git worktree list
+  # al terminar
+  git merge feat/stock-schema feat/stock-api feat/stock-ui
+  git worktree remove ../tb-schema
+  ```
+</Terminal>
+
+<Callout>Mismo repo, **ramas y carpetas separadas**: sin clonar y sin pisarse.</Callout>
+
+<Notes>
+- Cada worktree necesita su propio npm install (o un symlink a sus dependencias) y su propia base de datos SQLite.
+</Notes>

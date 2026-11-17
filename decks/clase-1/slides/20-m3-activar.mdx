@@ -1,0 +1,20 @@
+<Eyebrow>M3 · Setup</Eyebrow>
+
+## Activar Agent Teams (experimental)
+
+<Terminal path="~/capstone/.claude/settings.json">
+  ```json
+  {
+    "env": {
+      "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "1"
+    }
+  }
+  ```
+</Terminal>
+
+<Callout>Corre Claude Code **dentro de tmux** para ver a cada teammate en su propio panel.</Callout>
+
+<Notes>
+- Es experimental: el comportamiento puede cambiar entre versiones. Probarlo el día antes con la versión del grupo.
+- Sin tmux funciona igual, pero no se ve la coordinación.
+</Notes>

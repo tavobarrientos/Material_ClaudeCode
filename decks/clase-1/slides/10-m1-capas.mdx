@@ -1,0 +1,20 @@
+<Eyebrow>M1 · Capas de contexto</Eyebrow>
+
+## CLAUDE.md, AGENTS.md y el prompt de tarea
+
+<table>
+  <thead><tr><th></th><th>CLAUDE.md</th><th>AGENTS.md</th><th>Prompt de tarea</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Para quién</strong></td><td>Claude Code</td><td>Cualquier agente del equipo</td><td>Esta sesión</td></tr>
+    <tr><td><strong>Contiene</strong></td><td>Proyecto, stack, reglas</td><td>Roles, límites, handoffs</td><td>Qué hacer ahora</td></tr>
+    <tr><td><strong>Cambia</strong></td><td>Cuando cambia el proyecto</td><td>Cuando cambia el equipo</td><td>En cada tarea</td></tr>
+    <tr><td><strong>Vive en</strong></td><td>Repo (versionado)</td><td>Repo (versionado)</td><td>Tu terminal</td></tr>
+  </tbody>
+</table>
+
+<Callout>Lo que se repite en cada prompt **pertenece al contexto**, no al prompt.</Callout>
+
+<Notes>
+- AGENTS.md como contrato de equipo: quién toca qué archivos, cómo se entregan resultados.
+- CLAUDE.md puede importar AGENTS.md con @AGENTS.md para no duplicar.
+</Notes>

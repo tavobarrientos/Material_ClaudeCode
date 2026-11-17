@@ -1,0 +1,4 @@
+---
+// The mistake. Inside <Pitfall>.
+---
+<div class="anti"><strong>Anti-patrón:</strong> <slot /></div>

@@ -1,0 +1,4 @@
+---
+// The correction. Inside <Pitfall>.
+---
+<div class="fix"><strong>Mejor así:</strong> <slot /></div>

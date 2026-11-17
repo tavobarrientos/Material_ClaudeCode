@@ -1,0 +1,23 @@
+<Eyebrow>M2 · Custom agents</Eyebrow>
+
+## Un custom agent es un archivo markdown
+
+```markdown
+---
+name: schema-agent
+description: Diseña y migra el schema de Drizzle. Úsalo para
+  cambios de tablas, columnas o relaciones en src/db/schema/.
+tools: Read, Edit, Write, Bash(npm run db:*)
+model: sonnet
+---
+Eres responsable SOLO de src/db/schema/ y de las migraciones.
+Nunca edites migraciones existentes. Al terminar, responde con:
+archivos tocados, migración generada y comando para aplicarla.
+```
+
+<Callout>`description` decide **cuándo** se usa. El cuerpo decide **cómo** trabaja.</Callout>
+
+<Notes>
+- Viven en .claude/agents/ (proyecto) o ~/.claude/agents/ (usuario). /agents los administra.
+- model: sonnet, opus, haiku o inherit.
+</Notes>

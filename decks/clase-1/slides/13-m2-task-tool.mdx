@@ -1,0 +1,21 @@
+<Eyebrow>M2 · Subagents</Eyebrow>
+
+## Cómo funciona el Task tool
+
+```mermaid
+flowchart LR
+  M[Agente principal] -->|Task: prompt + tipo| S1[Subagent A]
+  M -->|Task| S2[Subagent B]
+  S1 -->|resumen| M
+  S2 -->|resumen| M
+  S1 -.- C1[(Contexto aislado)]
+  S2 -.- C2[(Contexto aislado)]
+```
+
+<Callout>Cada subagent tiene **su propia ventana de contexto** y solo regresa un resumen.</Callout>
+
+<Notes>
+- En versiones recientes de Claude Code la herramienta aparece como Agent tool; es el mismo mecanismo.
+- Beneficio principal: el contexto del agente principal no se llena con la exploración.
+- Los subagents no hablan entre sí: todo pasa por el principal. Eso cambia con Agent Teams (M3).
+</Notes>

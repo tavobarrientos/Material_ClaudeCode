@@ -1,0 +1,19 @@
+<Eyebrow>M2 · Menor privilegio</Eyebrow>
+
+## Cada agente, solo las tools que necesita
+
+<table>
+  <thead><tr><th>Agente</th><th>tools</th><th>Por qué</th></tr></thead>
+  <tbody>
+    <tr><td><code>schema-agent</code></td><td>Read, Edit, Write, Bash(npm run db:&#42;)</td><td>Migra, pero no corre cualquier comando</td></tr>
+    <tr><td><code>ui-agent</code></td><td>Read, Edit, Write</td><td>No necesita shell</td></tr>
+    <tr><td><code>reviewer</code></td><td>Read, Grep, Glob</td><td>Solo lee: no puede arreglar lo que revisa</td></tr>
+    <tr><td><code>test-runner</code></td><td>Read, Bash(npm test&#42;)</td><td>Corre pruebas, no edita código</td></tr>
+  </tbody>
+</table>
+
+<Callout>Menos tools = **menos formas de salirse del carril**.</Callout>
+
+<Notes>
+- Si omites tools, el agente hereda todas. Para un reviewer eso es un error.
+</Notes>

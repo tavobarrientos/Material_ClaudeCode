@@ -1,0 +1,20 @@
+<Eyebrow>M2 · Orquestación</Eyebrow>
+
+## Prompt pattern para subagents en paralelo
+
+```text
+Implementa el umbral de stock mínimo en Tinybiz.
+Lanza EN PARALELO dos subagents:
+1. schema-agent: agrega min_stock a products y genera la migración.
+2. ui-agent: muestra un badge "Stock bajo" en la tabla de productos
+   cuando stock < min_stock. Asume que el campo ya existe.
+Espera a ambos. Luego corre npm test y resume:
+archivos tocados por cada uno y cualquier conflicto.
+```
+
+<Callout>Di **"en paralelo"**, nombra al agente y define **qué te deben regresar**.</Callout>
+
+<Notes>
+- Sin "en paralelo" Claude suele lanzarlos en secuencia.
+- La línea "asume que el campo ya existe" es la que permite paralelizar: contrato explícito entre tareas.
+</Notes>

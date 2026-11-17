@@ -1,0 +1,25 @@
+<Eyebrow>M0 · Criterio</Eyebrow>
+
+## Multi-agent: cuándo sí y cuándo NO
+
+<Compare>
+  <Col title="Sí conviene">
+    - Tareas **independientes** que se pueden paralelizar
+    - Dominios separados: schema, API, UI, pruebas
+    - Una spec clara con tareas bien partidas
+    - Revisión con perspectivas distintas
+  </Col>
+  <Col title="No conviene">
+    - Tareas **acopladas** que tocan los mismos archivos
+    - Debugging de un bug puntual
+    - Cambios de menos de una hora
+    - Exploración sin objetivo claro
+  </Col>
+</Compare>
+
+<Callout>Multi-agent **multiplica tokens**. Úsalo cuando el paralelismo paga ese costo.</Callout>
+
+<Notes>
+- Un Agent Team de 3 agentes puede costar 3–4x una sesión normal.
+- Regla práctica: si no puedes partir el trabajo en 3 tareas sin dependencias, no es para un team.
+</Notes>
