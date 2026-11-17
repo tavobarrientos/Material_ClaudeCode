@@ -10,6 +10,7 @@ M0 Kickoff · M1 CLAUDE.md · M2 Subagents · M3 Agent Teams — labs 01–03 (2
 
 - Deck: [`decks/clase-1/`](decks/clase-1/)
 - PDF: [`decks/pdf/clase-1.pdf`](decks/pdf/clase-1.pdf)
+- Guía de estudio: [`guias/guia-clase-1.pdf`](guias/guia-clase-1.pdf)
 
 ```bash
 cd decks/clase-1

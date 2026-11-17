@@ -26,7 +26,8 @@ Thumbs.db
 
 # Not published yet
 capstone/
-guias/
+guias/*
+!guias/guia-clase-1.pdf
 decks/clase-2/
 decks/clase-3/
 decks/pdf/clase-2.pdf
