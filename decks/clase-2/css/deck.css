@@ -1,0 +1,12 @@
+/* This deck's own CSS. Loaded last, so it wins.
+ *
+ * Style your components here using the theme variables, so they survive a palette change:
+ *   --amby-fuchsia --amby-orchid --amby-blue --amby-cyan
+ *   --amby-bg --amby-bg-2 --amby-bg-3 --amby-fg --amby-fg-dim --amby-warn --amby-ok
+ *   --font-display --font-body --font-mono
+ *
+ * The brand theme lives in the Axo package. You never edit it; you override it here.
+ */
+
+.reveal pre { font-size: 0.66em; line-height: 1.45; }
+.reveal table { margin: 0.4em auto 0.8em; }

@@ -18,3 +18,18 @@ npm install
 npm run dev       # http://localhost:8000 — tecla S para speaker notes
 npm run pdf       # exporta a PDF
 ```
+
+## Clase 2
+
+M4 OpenSpec · M5 OpenSpec + Agent Teams — labs 04–05 (20 slides).
+
+- Deck: [`decks/clase-2/`](decks/clase-2/)
+- PDF: [`decks/pdf/clase-2.pdf`](decks/pdf/clase-2.pdf)
+- Guía de estudio: [`guias/guia-clase-2.pdf`](guias/guia-clase-2.pdf)
+
+```bash
+cd decks/clase-2
+npm install
+npm run dev       # http://localhost:8000 — tecla S para speaker notes
+npm run pdf       # exporta a PDF
+```

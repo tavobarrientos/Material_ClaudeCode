@@ -1,0 +1,17 @@
+<Eyebrow>M5 · Prompt pattern</Eyebrow>
+
+## El prompt que conecta spec y team
+
+```text
+Lee openspec/changes/add-min-stock/proposal.md, design.md y tasks.md.
+1. Haz tú las tareas secuenciales (1.x) en main y haz commit.
+2. Crea un Agent Team de 3 teammates, uno por worktree:
+   - api   → ../tb-api   → tarea 2.1
+   - ui    → ../tb-ui    → tareas 2.2 y 2.3
+   - tests → ../tb-tests → tarea 2.4
+   Todos respetan el "Contract between tasks" de design.md.
+3. Cada teammate marca [x] en tasks.md al terminar su tarea.
+4. Haz merge de las ramas y corre npm test.
+```
+
+<Callout>Rutas, tareas y contrato **explícitos**. Nada se deja a interpretación.</Callout>

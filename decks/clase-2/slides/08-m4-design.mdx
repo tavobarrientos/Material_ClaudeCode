@@ -1,0 +1,22 @@
+<Eyebrow>M4 · design.md</Eyebrow>
+
+## Design: aquí entra el stack
+
+```markdown
+## Decisions
+- Columna `min_stock INTEGER NOT NULL DEFAULT 0` en products
+- Migración nueva con drizzle-kit; no se edita ninguna existente
+- `GET /api/products?lowStock=true` filtra stock <= min_stock
+- Badge en `ProductTable` y página `/inventory/restock`
+## Contract between tasks
+- Campo: `min_stock` (number) · Query param: `lowStock`
+- Componente: `<LowStockBadge stock min />`
+## Risks
+- Productos existentes quedan con 0 → sin alertas hasta configurarlos
+```
+
+<Callout>La sección **Contract between tasks** es la que hace posible el paralelismo.</Callout>
+
+<Notes>
+- Es el mismo truco del lab 2 ("asume que el campo existe"), pero escrito y versionado.
+</Notes>

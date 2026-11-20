@@ -1,0 +1,22 @@
+<Eyebrow>M5 · El flujo completo</Eyebrow>
+
+## Por qué apply no usa Agent Teams
+
+<Compare>
+  <Col title="apply de OpenSpec">
+    - Una sola sesión, tarea por tarea
+    - Secuencial: ignora las marcas `[P]`
+    - Simple y barato
+  </Col>
+  <Col title="Spec + Agent Team">
+    - Un teammate por grupo de tareas `[P]`
+    - Paralelo, cada uno en su **worktree**
+    - Más rápido en features grandes, más tokens
+  </Col>
+</Compare>
+
+<Callout>OpenSpec define **qué** hacer. El Agent Team lo hace **en paralelo**: el puente es tu prompt.</Callout>
+
+<Notes>
+- Para features chicas, apply secuencial sigue siendo la opción correcta.
+</Notes>

@@ -28,7 +28,6 @@ Thumbs.db
 capstone/
 guias/*
 !guias/guia-clase-1.pdf
-decks/clase-2/
+!guias/guia-clase-2.pdf
 decks/clase-3/
-decks/pdf/clase-2.pdf
 decks/pdf/clase-3.pdf

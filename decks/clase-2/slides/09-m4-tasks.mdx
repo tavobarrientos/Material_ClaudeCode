@@ -1,0 +1,21 @@
+<Eyebrow>M4 · tasks.md</Eyebrow>
+
+## Tasks con marcas de paralelismo
+
+```markdown
+## 1. Datos
+- [ ] 1.1 Agregar min_stock al schema y generar migración
+## 2. Implementación
+- [ ] 2.1 [P] API: filtro lowStock en GET /api/products
+- [ ] 2.2 [P] UI: LowStockBadge en ProductTable
+- [ ] 2.3 [P] UI: página /inventory/restock
+- [ ] 2.4 [P] Tests de API y de componente
+## 3. Cierre
+- [ ] 3.1 Seed con productos bajo el umbral y prueba manual
+```
+
+<Callout>`[P]` = **no depende de otra tarea del mismo bloque** y toca archivos distintos.</Callout>
+
+<Notes>
+- 1.1 es secuencial: todo depende del schema. El bloque 2 es lo que reparte el team.
+</Notes>

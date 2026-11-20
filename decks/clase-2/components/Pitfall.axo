@@ -1,0 +1,13 @@
+---
+// The mistake everyone makes. Pair with `layout: pitfall`.
+//
+//   <Pitfall>
+//     <Anti>What people do, and why it looks reasonable.</Anti>
+//     <Fix>The correction, and why it works.</Fix>
+//   </Pitfall>
+
+const { badge = 'ERROR COMÚN' } = Axo.props;
+---
+
+<span class="pitfall-badge">{badge}</span>
+<slot />
